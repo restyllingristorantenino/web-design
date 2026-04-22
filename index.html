@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ristorante Nino | Tradizione Toscana</title>
+    <link rel="stylesheet" href="style.css" 
+    ></head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home"><img src="logo-nero.png" alt="Ristorante Nino" /></a>
+            </div>
+            <ul id="navMenu" class="nav-links" role="menu">
+                <li><a href="#home" data-key="nav_home">Home</a></li>
+                <li><a href="#storia" data-key="nav_storia">La Storia</a></li>
+                <li><a href="#menu" data-key="nav_menu">Il Menu</a></li>
+                <li><a href="#prenota" data-key="nav_prenota">Prenota</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+            <div class="dropdown">
+                <button class="dropbtn" id="dropdownToggle" aria-expanded="false" aria-controls="dropdownMenu"></button>
+                <div class="dropdown-content" id="dropdownMenu" role="menu">
+                    <div class="dropdown-lang">
+                        <button onclick="changeLanguage('it')" class="lang-btn">IT</button>
+                        <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+                        <button onclick="changeLanguage('es')" class="lang-btn">ES</button>
+                        <button onclick="changeLanguage('fr')" class="lang-btn">FR</button>
+                    </div>
+                </div>
+            </div>
+            <button id="navToggle" class="nav-toggle" aria-label="Apri menu" aria-controls="navMenu" aria-expanded="false">☰</button>
+        </nav>
+    </header>
+
+    <div id="mobileOverlay" class="mobile-overlay"></div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-key="hero_title">Il Gusto della Tradizione a Roma</h1>
+            <p data-key="hero_desc">Dal 1946, l'autentica cucina toscana nel cuore della città.</p>
+            <a href="#menu" class="btn" data-key="hero_btn">Scopri il Menu</a>
+        </div>
+    </section>
+
+    <section id="storia" class="menu">
+        <div class="menu-container">
+            <h2 data-key="section_history">La Storia</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3 data-key="history_subtitle_1">Dalla toscana con passione</h3>
+                    <p data-key="history_text_1">Gioacchino Guarnacci, detto Nino, nacque a Castelfranco di Sopra nel 1899, in provincia di Arezzo. Uno dei più bei borghi della Toscana e d'Italia. Subito dopo la Prima Guerra Mondiale, a Castelfranco era impossibile trovare un lavoro, e per questo Nino viaggiò provando molti mestieri dal nord al sud dell'Italia. Giunse a Roma, con il fratello Mario dove iniziarono a lavorare come dipendenti nella ristorazione. Intuirono che sarebbe stata la loro attività, ed è così che insieme, con talento e determinazione, intrapresero l'attività della ristorazione. Aprirono nel 1933 a via Rasella. Il successo arrivò rapidamente e nel 1939 aprirono anche a Via Borgognona. Il Ristorante ebbe da subito una clientela numerosa e varia, ma anche affezionata e spesso amica.</p>
+
+                    <h3 data-key="history_subtitle_2">Le personalità di Nino e Mario</h3>
+                    <p data-key="history_text_2">Nino e Mario avevano personalità diverse, il primo intraprendente e istrionico e il secondo riservato e ponderato. Tali differenze non comportarono vincoli, ma opportunità e vantaggi organizzativi: erano complementari e si dividevano la responsabilità con reciproca stima e profonda intesa, nell'intento di realizzare una passione comune. Nino estroverso, intuitivo, ricco di grande comunicativa e simpatia fece un'arte di questo mestiere. Chi lo ha conosciuto racconta della sua socievolezza e della sua generosità. Doti che lo portarono a stabilire con gli ospiti un rapporto di reciproca stima e simpatia. Senza lasciarsi intimidire dalla fama dai personaggi dello spettacolo o dai titoli nobiliari della società romana che frequentavano il locale, accoglieva e trattava tutti come fosse un padrone di casa e non un oste. Per natura incline alla bellezza arredò il ristorante senza fare economia solo con cose belle e di pregio e che ancora caratterizzano il ristorante per la sua classica eleganza. Tra le varie cose, fece realizzare una vetrofania riportante una scena di caccia per dividere l'ingresso dalla cucina da cui si poteva – e si può ancora – vedere la cucina e i cuochi. Probabilmente la prima cucina a vista nella storia della ristorazione fu un'intuizione di Nino. Difficile elencare quanti personaggi noti dello spettacolo, dell'arte e del mondo pubblico mangiarono da Nino, ne citiamo solo alcuni: Dino De Laurentiis con Silvana Mangano, Carlo Ponti e Sophia Loren, Rizzoli, Dino Risi, Michelangelo Antonioni, Roberto Rossellini, Alberto Sordi, Anna Magnani, Audrey Hepburn, Vittorio Gassman, Marcello Mastroianni, Lucio Dalla. E ancora i pittori Guttuso, Manzù, Vaccari, Tamburi, Vaccari.</p>
+
+                    <h3 data-key="history_subtitle_3">Il presente</h3>
+                    <p data-key="history_text_3">Gli anni passano e la storia di Nino continua grazie all'amore e all'impegno della famiglia. Dopo la scomparsa dalla scena di Maria, Egidio e Anna, che per molti anni hanno custodito e fatto crescere il ristorante nel solco dei fondatori, il testimone è passato alle generazioni successive, che con entusiasmo e dedizione portano avanti lo spirito di famiglia che da sempre anima Nino. Avvocati, ingegneri, sommelier: ognuno ha messo a disposizione il proprio sapere e la propria sensibilità, arricchendo la gestione con nuove idee, ma sempre nel pieno rispetto della tradizione. Negli ultimi mesi si sono aggiunti anche i giovani della quarta generazione, pieni di passione e voglia di fare. La loro energia si riflette nell'accoglienza dei clienti e nella cura della nostra presenza su Instagram, dove proviamo a raccontare ciò che accade da Nino anche dietro le quinte. Tutto questo, però, senza mai dimenticare il carattere autentico e la personalità inconfondibile di Nino, che hanno assunto un valore iconico nella scena romana. Un ruolo fondamentale continua a svolgerlo il nostro personale, da sempre parte integrante della famiglia. Con professionalità, attenzione e gentilezza, accompagna i clienti rendendo ogni visita un momento piacevole e autentico: è anche grazie a loro se l'atmosfera di Nino conserva quel senso di accoglienza e di calore.</p>
+
+                    <h3 data-key="history_subtitle_4">La clientela</h3>
+                    <p data-key="history_text_4">È varia e internazionale: coppie, famiglie, professionisti, turisti, politici, attori, giornalisti. I nostri clienti affezionati sono sparsi in tutto il mondo e ogni volta che sono a Roma vengono a trovarci come tappa irrinunciabile del viaggio e ci raccontano da quanti anni ci conoscono e quali sono i nostri piatti che più amano, ritrovando sempre la stessa accoglienza e la stessa bontà dei piatti. Cogliamo l'occasione per ringraziarli sinceramente per la loro fedeltà e il loro affetto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="menu-container">
+            <h2 data-key="menu_title">Il Menu</h2>
+            <div class="menu-items">
+                
+                <h2 class="menu-section-title" data-key="section_daily">Piatti del Giorno</h2>
+                
+                <div class="menu-item">
+                    <h3 data-key="monday">Lunedì</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_1">Petto di vitella al forno con purè</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_2">Cinghiale spezzato con polenta</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_3">Abbacchio alla scottadito con patate</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_4">Filetto di tonno alla griglia o con cipolla rossa</span><span class="price">28 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_5">Sogliola a piacere</span><span class="price">36 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_6">Calamari freschi</span><span class="price">28 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_7">Zampone con lenticchia</span><span class="price">24 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="tuesday_saturday">Martedì / Sabato</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_8">Ossobuco di vitella con purè</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_9">Medaglioni di vitella con purè</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_10">Faraona in casseruola con purè</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_11">Abbacchio al forno con patate</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_12">Maialino al forno con patate (Sabato)</span><span class="price">24 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="wednesday">Mercoledì</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_48">Pollo alla cacciatora con patate</span><span class="price">24 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_49">Coniglio in umido con polenta</span><span class="price">26 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_50">Maiale in salsa con fagioli</span><span class="price">25 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="thursday">Giovedì</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_51">Pasta e fagioli</span><span class="price">14 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_52">Zuppa di ceci</span><span class="price">12 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_53">Risotto ai funghi</span><span class="price">18 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="friday">Venerdì</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_13">Baccalà alla livornese</span><span class="price">22 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_14">Baccalà fritto con zucchine</span><span class="price">22 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_15">Calamari freschi</span><span class="price">28 €</span></div>
+                </div>
+
+                <h2 class="menu-section-title" data-key="section_appetizers">Antipasti & Crudi</h2>
+                
+                <div class="menu-item">
+                    <h3 data-key="raw_fish">Crudi di Pesce</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_16">Tartara di tonno con mela verde</span><span class="price">33 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_17">Carpaccio di polpo, finocchio e pepe rosa</span><span class="price">25 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_18">Crudo di gamberi rossi e porcini</span><span class="price">48 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="classic_appetizers">Antipasti Classici</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_19">Crostini toscani</span><span class="price">10 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_20">Affettato misto toscano</span><span class="price">15 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_21">Prosciutto Parma / Mozzarella di bufala</span><span class="price">14 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_22">Bresaola rughetta e parmigiano</span><span class="price">18 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_23">Caviale con fagioli</span><span class="price">95 €</span></div>
+                </div>
+
+                <h2 class="menu-section-title" data-key="section_first_courses">Primi Piatti</h2>
+
+                <div class="menu-item">
+                    <h3 data-key="soups_stews">Minestre & Zuppe</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_24">Ribollita Toscana</span><span class="price">16 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_25">Zuppa di fagioli alla "Francovich"</span><span class="price">12 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_26">Tortellini freschi in brodo</span><span class="price">16 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="pasta">Pasta</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_27">Tagliolini al tartufo bianco</span><span class="price">85 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_28">Pappardelle al ragù cinghiale</span><span class="price">18 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_29">Ravioli con carciofi alla Nino</span><span class="price">22 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_30">Cannelloni alla Nino</span><span class="price">19 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_31">Spaghetti alle vongole</span><span class="price">22 €</span></div>
+                </div>
+
+                <h2 class="menu-section-title" data-key="section_main_courses">Secondi & Contorni</h2>
+
+                <div class="menu-item">
+                    <h3 data-key="grilled_meats">Carne alla Griglia & Espressi</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_32">Bistecca fiorentina al kg</span><span class="price">80 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_33">Filetto di manzo</span><span class="price">35 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_34">Tagliata di manzo su rughetta</span><span class="price">29 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_35">Tartara di manzo</span><span class="price">29 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_36">Melanzane alla parmigiana</span><span class="price">19 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="fried_fish">Fritti & Pesce</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_37">Fritto misto all'italiana</span><span class="price">22 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_38">Carciofi fritti</span><span class="price">15 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_39">Orata / Spigola</span><span class="price">26 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="vegetables">Verdure</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_40">Due carciofi alla Romana</span><span class="price">19 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_41">Fagioli al fiasco all'olio</span><span class="price">10 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_42">Cicoria di campo / Broccoli</span><span class="price">12 €/10 €</span></div>
+                </div>
+
+                <h2 class="menu-section-title" data-key="section_desserts">Dolci & Frutta</h2>
+
+                <div class="menu-item">
+                    <h3 data-key="desserts">Dessert</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_43">Tiramisù / Profiteroles / Crèm caramel</span><span class="price">9 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_44">Montebianco / Castagnaccio</span><span class="price">10 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_45">Gelati misti</span><span class="price">9 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="fruits">Frutta</h3>
+                    <div class="dish"><span class="dish-name" data-key="dish_46">Frutti di bosco</span><span class="price">14 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="dish_47">Ananas / Frutta di stagione</span><span class="price">9 €</span></div>
+                </div>
+
+                <h2 class="menu-section-title" data-key="section_wines">Carta dei Vini</h2>
+
+                <div class="menu-item">
+                    <h3 data-key="red_wines">Vini Rossi</h3>
+                    <div class="dish"><span class="dish-name" data-key="wine_1">Chianti Classico</span><span class="price">25 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_2">Brunello di Montalcino</span><span class="price">80 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_3">Morellino di Scansano</span><span class="price">30 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_4">Nobile di Montepulciano</span><span class="price">45 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="white_wines">Vini Bianchi</h3>
+                    <div class="dish"><span class="dish-name" data-key="wine_5">Vernaccia di San Gimignano</span><span class="price">28 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_6">Galestro</span><span class="price">35 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_7">Vermentino</span><span class="price">22 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="rose_wines">Vini Rosati</h3>
+                    <div class="dish"><span class="dish-name" data-key="wine_8">Rosato di Toscana</span><span class="price">20 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_9">Cerasuolo di Vittoria</span><span class="price">32 €</span></div>
+                </div>
+
+                <div class="menu-item">
+                    <h3 data-key="sparkling_wines">Vini Spumanti</h3>
+                    <div class="dish"><span class="dish-name" data-key="wine_10">Franciacorta</span><span class="price">50 €</span></div>
+                    <div class="dish"><span class="dish-name" data-key="wine_11">Prosecco</span><span class="price">18 €</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="prenota" class="reservation">
+        <div class="reservation-container">
+            <h2>Prenota</h2>
+            <p>Termini e condizioni. L’invio dei dati del seguente modulo genera una richiesta di prenotazione. La conferma della prenotazione verrà recapitata al relativo indirizzo e-mail registrato nel modulo di richiesta.</p>
+            <p>La nostra risposta verrà inviata al più presto.</p>
+            <p>La richiesta di prenotazione viene presa in carico dal nostro staff entro il giorno prima altrimenti è necessario telefonare.</p>
+            <p>Per prenotazioni superiori a 7 persone è richiesto il pagamento di una caparra di 20 € a persona tramite “Pay by link”</p>
+            <p>L’importo verrà restituito in caso di disdetta pervenuta prima di 12 ore.</p>
+
+            <form id="reservationForm">
+                <label for="name">Nome e cognome (obbligatorio)</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">La tua email (obbligatorio)</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Numero di telefono (obbligatorio)</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="guests">Numero di persone (obbligatorio)</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="date">Data (obbligatorio)<br><small>È possibile prenotare fino a 36 giorni da oggi</small></label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Orario (obbligatorio)</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="notes">Richieste particolari (facoltativo)</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+
+                <button type="submit">Invia Richiesta</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contatti" class="contact">
+        <div class="contact-container">
+            <h2>Orario e luogo</h2>
+            <p>Aperto a pranzo e a cena dal lunedì al sabato</p>
+            <p>Orario della cucina: dalle 12.30 alle 15.00</p>
+            <p>Orario della cucina: dalle 19.30 alle 23,00</p>
+            <p>Chiusura: Domenica</p>
+            <p>Vi aspettiamo.</p>
+
+            <p><strong>Indirizzo</strong>: Via Borgognona 11 – 00187 Roma (RM) – Italia</p>
+       
+            <h2>Contatti</h2>
+            <p><strong>Telefono</strong>: +39 06 6795676 – +39 06 6786752</p>
+            <p><strong>Email</strong>: contatti@ristorantenino.it</p>
+        </div>
+    </section>
+
+    <button id="scrollToTopBtn" title="Torna in alto">↑</button>
+
+    <footer>
+        <p>&copy; 2026 Ristorante Nino - Via Borgognona 11, Roma</p>
+    </footer>
+
+    <script>
+        const translations = {
+            it: {
+                nav_home: "Home",
+                nav_storia: "La Storia",
+                nav_menu: "Il Menu",
+                nav_prenota: "Prenota",
+                hero_title: "Il Gusto della Tradizione a Roma",
+                hero_desc: "Dal 1946, l'autentica cucina toscana nel cuore della città.",
+                hero_btn: "Scopri il Menu",
+                menu_title: "Il Menu",
+                section_daily: "Piatti del Giorno",
+                monday: "Lunedì",
+                dish_1: "Petto di vitella al forno con purè",
+                dish_2: "Cinghiale spezzato con polenta",
+                dish_3: "Abbacchio alla scottadito con patate",
+                dish_4: "Filetto di tonno alla griglia o con cipolla rossa",
+                dish_5: "Sogliola a piacere",
+                dish_6: "Calamari freschi",
+                dish_7: "Zampone con lenticchia",
+                tuesday_saturday: "Martedì / Sabato",
+                dish_8: "Ossobuco di vitella con purè",
+                dish_9: "Medaglioni di vitella con purè",
+                dish_10: "Faraona in casseruola con purè",
+                dish_11: "Abbacchio al forno con patate",
+                dish_12: "Maialino al forno con patate (Sabato)",
+                wednesday: "Mercoledì",
+                dish_48: "Pollo alla cacciatora con patate",
+                dish_49: "Coniglio in umido con polenta",
+                dish_50: "Maiale in salsa con fagioli",
+                thursday: "Giovedì",
+                dish_51: "Pasta e fagioli",
+                dish_52: "Zuppa di ceci",
+                dish_53: "Risotto ai funghi",
+                friday: "Venerdì",
+                dish_13: "Baccalà alla livornese",
+                dish_14: "Baccalà fritto con zucchine",
+                dish_15: "Calamari freschi",
+                section_appetizers: "Antipasti & Crudi",
+                raw_fish: "Crudi di Pesce",
+                dish_16: "Tartara di tonno con mela verde",
+                dish_17: "Carpaccio di polpo, finocchio e pepe rosa",
+                dish_18: "Crudo di gamberi rossi e porcini",
+                classic_appetizers: "Antipasti Classici",
+                dish_19: "Crostini toscani",
+                dish_20: "Affettato misto toscano",
+                dish_21: "Prosciutto Parma / Mozzarella di bufala",
+                dish_22: "Bresaola rughetta e parmigiano",
+                dish_23: "Caviale con fagioli",
+                section_first_courses: "Primi Piatti",
+                soups_stews: "Minestre & Zuppe",
+                dish_24: "Ribollita Toscana",
+                dish_25: "Zuppa di fagioli alla \"Francovich\"",
+                dish_26: "Tortellini freschi in brodo",
+                pasta: "Pasta",
+                dish_27: "Tagliolini al tartufo bianco",
+                dish_28: "Pappardelle al ragù cinghiale",
+                dish_29: "Ravioli con carciofi alla Nino",
+                dish_30: "Cannelloni alla Nino",
+                dish_31: "Spaghetti alle vongole",
+                section_main_courses: "Secondi & Contorni",
+                grilled_meats: "Carne alla Griglia & Espressi",
+                dish_32: "Bistecca fiorentina al kg",
+                dish_33: "Filetto di manzo",
+                dish_34: "Tagliata di manzo su rughetta",
+                dish_35: "Tartara di manzo",
+                dish_36: "Melanzane alla parmigiana",
+                fried_fish: "Fritti & Pesce",
+                dish_37: "Fritto misto all'italiana",
+                dish_38: "Carciofi fritti",
+                dish_39: "Orata / Spigola",
+                vegetables: "Verdure",
+                dish_40: "Due carciofi alla Romana",
+                dish_41: "Fagioli al fiasco all'olio",
+                dish_42: "Cicoria di campo / Broccoli",
+                section_desserts: "Dolci & Frutta",
+                desserts: "Dessert",
+                dish_43: "Tiramisù / Profiteroles / Crèm caramel",
+                dish_44: "Montebianco / Castagnaccio",
+                dish_45: "Gelati misti",
+                fruits: "Frutta",
+                dish_46: "Frutti di bosco",
+                dish_47: "Ananas / Frutta di stagione",
+                section_history: "La Storia",
+                history_subtitle_1: "Dalla toscana con passione",
+                history_text_1: "Gioacchino Guarnacci, detto Nino, nacque a Castelfranco di Sopra nel 1899, in provincia di Arezzo. Uno dei più bei borghi della Toscana e d'Italia. Subito dopo la Prima Guerra Mondiale, a Castelfranco era impossibile trovare un lavoro, e per questo Nino viaggiò provando molti mestieri dal nord al sud dell'Italia. Giunse a Roma, con il fratello Mario dove iniziarono a lavorare come dipendenti nella ristorazione. Intuirono che sarebbe stata la loro attività, ed è così che insieme, con talento e determinazione, intrapresero l'attività della ristorazione. Aprirono nel 1933 a via Rasella. Il successo arrivò rapidamente e nel 1939 aprirono anche a Via Borgognona. Il Ristorante ebbe da subito una clientela numerosa e varia, ma anche affezionata e spesso amica.",
+                history_subtitle_2: "Le personalità di Nino e Mario",
+                history_text_2: "Nino e Mario avevano personalità diverse, il primo intraprendente e istrionico e il secondo riservato e ponderato. Tali differenze non comportarono vincoli, ma opportunità e vantaggi organizzativi: erano complementari e si dividevano la responsabilità con reciproca stima e profonda intesa, nell'intento di realizzare una passione comune. Nino estroverso, intuitivo, ricco di grande comunicativa e simpatia fece un'arte di questo mestiere. Chi lo ha conosciuto racconta della sua socievolezza e della sua generosità. Doti che lo portarono a stabilire con gli ospiti un rapporto di reciproca stima e simpatia. Senza lasciarsi intimidire dalla fama dai personaggi dello spettacolo o dai titoli nobiliari della società romana che frequentavano il locale, accoglieva e trattava tutti come fosse un padrone di casa e non un oste. Per natura incline alla bellezza arredò il ristorante senza fare economia solo con cose belle e di pregio e che ancora caratterizzano il ristorante per la sua classica eleganza. Tra le varie cose, fece realizzare una vetrofania riportante una scena di caccia per dividere l'ingresso dalla cucina da cui si poteva – e si può ancora – vedere la cucina e i cuochi. Probabilmente la prima cucina a vista nella storia della ristorazione fu un'intuizione di Nino. Difficile elencare quanti personaggi noti dello spettacolo, dell'arte e del mondo pubblico mangiarono da Nino, ne citiamo solo alcuni: Dino De Laurentiis con Silvana Mangano, Carlo Ponti e Sophia Loren, Rizzoli, Dino Risi, Michelangelo Antonioni, Roberto Rossellini, Alberto Sordi, Anna Magnani, Audrey Hepburn, Vittorio Gassman, Marcello Mastroianni, Lucio Dalla. E ancora i pittori Guttuso, Manzù, Vaccari, Tamburi, Vaccari.",
+                history_subtitle_3: "Il presente",
+                history_text_3: "Gli anni passano e la storia di Nino continua grazie all'amore e all'impegno della famiglia. Dopo la scomparsa dalla scena di Maria, Egidio e Anna, che per molti anni hanno custodito e fatto crescere il ristorante nel solco dei fondatori, il testimone è passato alle generazioni successive, che con entusiasmo e dedizione portano avanti lo spirito di famiglia che da sempre anima Nino. Avvocati, ingegneri, sommelier: ognuno ha messo a disposizione il proprio sapere e la propria sensibilità, arricchendo la gestione con nuove idee, ma sempre nel pieno rispetto della tradizione. Negli ultimi mesi si sono aggiunti anche i giovani della quarta generazione, pieni di passione e voglia di fare. La loro energia si riflette nell'accoglienza dei clienti e nella cura della nostra presenza su Instagram, dove proviamo a raccontare ciò che accade da Nino anche dietro le quinte. Tutto questo, però, senza mai dimenticare il carattere autentico e la personalità inconfondibile di Nino, che hanno assunto un valore iconico nella scena romana. Un ruolo fondamentale continua a svolgerlo il nostro personale, da sempre parte integrante della famiglia. Con professionalità, attenzione e gentilezza, accompagna i clienti rendendo ogni visita un momento piacevole e autentico: è anche grazie a loro se l'atmosfera di Nino conserva quel senso di accoglienza e di calore.",
+                history_subtitle_4: "La clientela",
+                history_text_4: "È varia e internazionale: coppie, famiglie, professionisti, turisti, politici, attori, giornalisti. I nostri clienti affezionati sono sparsi in tutto il mondo e ogni volta che sono a Roma vengono a trovarci come tappa irrinunciabile del viaggio e ci raccontano da quanti anni ci conoscono e quali sono i nostri piatti che più amano, ritrovando sempre la stessa accoglienza e la stessa bontà dei piatti. Cogliamo l'occasione per ringraziarli sinceramente per la loro fedeltà e il loro affetto.",
+                section_wines: "Carta dei Vini",
+                red_wines: "Vini Rossi",
+                wine_1: "Chianti Classico",
+                wine_2: "Brunello di Montalcino",
+                wine_3: "Morellino di Scansano",
+                wine_4: "Nobile di Montepulciano",
+                white_wines: "Vini Bianchi",
+                wine_5: "Vernaccia di San Gimignano",
+                wine_6: "Galestro",
+                wine_7: "Vermentino",
+                rose_wines: "Vini Rosati",
+                wine_8: "Rosato di Toscana",
+                wine_9: "Cerasuolo di Vittoria",
+                sparkling_wines: "Vini Spumanti",
+                wine_10: "Franciacorta",
+                wine_11: "Prosecco"
+            },
+            en: {
+                nav_home: "Home",
+                nav_storia: "History",
+                nav_menu: "Menu",
+                nav_prenota: "Book a Table",
+                hero_title: "The Taste of Tradition in Rome",
+                hero_desc: "Since 1946, authentic Tuscan cuisine in the heart of the city.",
+                hero_btn: "View Menu",
+                menu_title: "The Menu",
+                section_daily: "Daily Specials",
+                monday: "Monday",
+                dish_1: "Roast veal breast with mashed potatoes",
+                dish_2: "Wild boar stew with polenta",
+                dish_3: "Grilled lamb chops with potatoes",
+                dish_4: "Grilled tuna fillet or with sweet and sour red onions",
+                dish_5: "Sole cooked to your liking",
+                dish_6: "Fresh Squid",
+                dish_7: "Zampone (pork trotter) with lentils",
+                tuesday_saturday: "Tuesday / Saturday",
+                dish_8: "Veal ossobuco with mashed potatoes",
+                dish_9: "Veal medallions with mashed potatoes",
+                dish_10: "Guinea fowl casserole with mashed potatoes",
+                dish_11: "Baked lamb with potatoes",
+                dish_12: "Roast suckling pig with potatoes (Saturday)",
+                wednesday: "Wednesday",
+                dish_48: "Hunter's chicken with potatoes",
+                dish_49: "Rabbit stew with polenta",
+                dish_50: "Pork in sauce with beans",
+                thursday: "Thursday",
+                dish_51: "Pasta and beans",
+                dish_52: "Chickpea soup",
+                dish_53: "Mushroom risotto",
+                friday: "Friday",
+                dish_13: "Livorno-style cod",
+                dish_14: "Fried cod with zucchini",
+                dish_15: "Fresh Squid",
+                section_appetizers: "Appetizers & Raw",
+                raw_fish: "Raw Fish",
+                dish_16: "Tuna tartare with green apple",
+                dish_17: "Octopus carpaccio, fennel and pink pepper",
+                dish_18: "Raw red prawns and porcini",
+                classic_appetizers: "Classic Appetizers",
+                dish_19: "Tuscan crostini",
+                dish_20: "Mixed Tuscan cold cuts",
+                dish_21: "Parma ham / Buffalo mozzarella",
+                dish_22: "Bresaola with rocket and parmesan",
+                dish_23: "Caviar with beans",
+                section_first_courses: "First Courses",
+                soups_stews: "Soups & Stews",
+                dish_24: "Tuscan ribollita",
+                dish_25: "Bean soup \"Francovich\" style",
+                dish_26: "Fresh tortellini in broth",
+                pasta: "Pasta",
+                dish_27: "Tagliolini with white truffle",
+                dish_28: "Pappardelle with wild boar ragu",
+                dish_29: "Ravioli with artichokes Nino style",
+                dish_30: "Cannelloni Nino style",
+                dish_31: "Spaghetti with clams",
+                section_main_courses: "Main Courses & Sides",
+                grilled_meats: "Grilled Meats & Express",
+                dish_32: "Florentine steak per kg",
+                dish_33: "Beef fillet",
+                dish_34: "Beef tagliata on rocket",
+                dish_35: "Beef tartare",
+                dish_36: "Eggplant parmigiana",
+                fried_fish: "Fried & Fish",
+                dish_37: "Mixed fry Italian style",
+                dish_38: "Fried artichokes",
+                dish_39: "Sea bream / Sea bass",
+                vegetables: "Vegetables",
+                dish_40: "Two Roman artichokes",
+                dish_41: "Fiasco beans in oil",
+                dish_42: "Field chicory / Broccoli",
+                section_desserts: "Desserts & Fruits",
+                desserts: "Desserts",
+                dish_43: "Tiramisu / Profiteroles / Creme caramel",
+                dish_44: "Montebianco / Chestnut cake",
+                dish_45: "Mixed ice creams",
+                fruits: "Fruits",
+                dish_46: "Berries",
+                dish_47: "Pineapple / Seasonal fruit",
+                section_history: "The History",
+                history_subtitle_1: "From Tuscany with Passion",
+                history_text_1: "Gioacchino Guarnacci, known as Nino, was born in Castelfranco di Sopra in 1899, in the province of Arezzo. One of the most beautiful villages in Tuscany and Italy. Right after World War I, it was impossible to find work in Castelfranco, so Nino traveled trying many jobs from north to south of Italy. He arrived in Rome with his brother Mario, where they started working as employees in the restaurant business. They realized it would be their activity, and that's how together, with talent and determination, they started the restaurant business. They opened in 1933 on Via Rasella. Success came quickly, and in 1939 they also opened on Via Borgognona. The restaurant immediately had a numerous and varied clientele, but also loyal and often friendly.",
+                history_subtitle_2: "The Personalities of Nino and Mario",
+                history_text_2: "Nino and Mario had different personalities: the first was enterprising and theatrical, the second reserved and thoughtful. These differences did not create constraints, but opportunities and organizational advantages: they were complementary and shared responsibilities with mutual respect and deep understanding, in the intent to realize a common passion. Nino, extroverted, intuitive, rich in great communication and sympathy, made an art of this profession. Those who knew him speak of his sociability and generosity. Qualities that led him to establish a relationship of mutual respect and sympathy with guests. Without being intimidated by the fame of entertainment personalities or the noble titles of Roman society who frequented the place, he welcomed and treated everyone as if he were a host and not an innkeeper. Naturally inclined towards beauty, he furnished the restaurant without sparing expense only with beautiful and valuable things that still characterize the restaurant for its classic elegance. Among other things, he had a stained glass window made depicting a hunting scene to separate the entrance from the kitchen, from which one could—and still can—see the kitchen and the cooks. Probably the first open kitchen in the history of catering was an intuition of Nino. It is difficult to list how many famous personalities from entertainment, art, and the public world ate at Nino's; we mention just a few: Dino De Laurentiis with Silvana Mangano, Carlo Ponti and Sophia Loren, Rizzoli, Dino Risi, Michelangelo Antonioni, Roberto Rossellini, Alberto Sordi, Anna Magnani, Audrey Hepburn, Vittorio Gassman, Marcello Mastroianni, Lucio Dalla. And also the painters Guttuso, Manzù, Vaccari, Tamburi, Vaccari.",
+                history_subtitle_3: "The Present",
+                history_text_3: "The years pass and Nino's story continues thanks to the love and commitment of the family. After the disappearance from the scene of Maria, Egidio, and Anna, who for many years guarded and grew the restaurant in the footsteps of the founders, the baton has passed to the next generations, who with enthusiasm and dedication carry forward the family spirit that has always animated Nino. Lawyers, engineers, sommeliers: each has made their knowledge and sensitivity available, enriching management with new ideas, but always in full respect of tradition. In recent months, the young people of the fourth generation have also joined, full of passion and desire to do. Their energy is reflected in customer service and in the care of our presence on Instagram, where we try to tell what happens at Nino's even behind the scenes. All this, however, without ever forgetting the authentic character and the unmistakable personality of Nino, which have taken on an iconic value in the Roman scene. A fundamental role continues to be played by our staff, always an integral part of the family. With professionalism, attention, and kindness, they accompany customers making every visit a pleasant and authentic moment: it is also thanks to them that Nino's atmosphere retains that sense of welcome and warmth.",
+                history_subtitle_4: "The Clientele",
+                history_text_4: "It is varied and international: couples, families, professionals, tourists, politicians, actors, journalists. Our loyal customers are scattered all over the world and every time they are in Rome they come to visit us as an indispensable stop on their trip and tell us how many years they have known us and what our dishes they love most, always finding the same welcome and the same goodness of the dishes. We take the opportunity to sincerely thank them for their loyalty and affection.",
+                section_wines: "Wine List",
+                red_wines: "Red Wines",
+                wine_1: "Chianti Classico",
+                wine_2: "Brunello di Montalcino",
+                wine_3: "Morellino di Scansano",
+                wine_4: "Nobile di Montepulciano",
+                white_wines: "White Wines",
+                wine_5: "Vernaccia di San Gimignano",
+                wine_6: "Galestro",
+                wine_7: "Vermentino",
+                rose_wines: "Rosé Wines",
+                wine_8: "Rosato di Toscana",
+                wine_9: "Cerasuolo di Vittoria",
+                sparkling_wines: "Sparkling Wines",
+                wine_10: "Franciacorta",
+                wine_11: "Prosecco"
+            },
+            es: {
+                nav_home: "Inicio",
+                nav_storia: "Historia",
+                nav_menu: "El Menú",
+                nav_prenota: "Reservar",
+                hero_title: "El Sabor de la Tradición en Roma",
+                hero_desc: "Desde 1946, auténtica cocina toscana en el corazón de la ciudad.",
+                hero_btn: "Ver el Menú",
+                menu_title: "El Menú",
+                section_daily: "Platos del Día",
+                monday: "Lunes",
+                dish_1: "Pecho de ternera al horno con puré",
+                dish_2: "Jabalí estofado con polenta",
+                dish_3: "Chuletas de cordero a la brasa con patatas",
+                dish_4: "Filete de atún a la parrilla o con cebolla roja agridulce",
+                dish_5: "Lenguado al gusto",
+                dish_6: "Calamares frescos",
+                dish_7: "Zampone (manita de cerdo) con lentejas",
+                tuesday_saturday: "Martes / Sábado",
+                dish_8: "Ossobuco de ternera con puré",
+                dish_9: "Medallones de ternera con puré",
+                dish_10: "Pintada en cazuela con puré",
+                dish_11: "Cordero al horno con patatas",
+                dish_12: "Lechón al horno con patatas (Sábado)",
+                wednesday: "Miércoles",
+                dish_48: "Pollo a la cazadora con patatas",
+                dish_49: "Conejo en estofado con polenta",
+                dish_50: "Cerdo en salsa con judías",
+                thursday: "Jueves",
+                dish_51: "Pasta y judías",
+                dish_52: "Sopa de garbanzos",
+                dish_53: "Risotto de setas",
+                friday: "Viernes",
+                dish_13: "Bacalao a la livornesa",
+                dish_14: "Bacalao frito con calabacín",
+                dish_15: "Calamares frescos",
+                section_appetizers: "Antipastos & Crudos",
+                raw_fish: "Crudos de Pescado",
+                dish_16: "Tartar de atún con manzana verde",
+                dish_17: "Carpaccio de pulpo, hinojo y pimienta rosa",
+                dish_18: "Crudo de gambas rojas y porcini",
+                classic_appetizers: "Antipastos Clásicos",
+                dish_19: "Crostini toscanos",
+                dish_20: "Fiambres toscanos mixtos",
+                dish_21: "Jamón Parma / Mozzarella de búfala",
+                dish_22: "Bresaola con rúcula y parmesano",
+                dish_23: "Caviar con judías",
+                section_first_courses: "Primeros Platos",
+                soups_stews: "Sopas & Guisos",
+                dish_24: "Ribollita toscana",
+                dish_25: "Sopa de judías al estilo \"Francovich\"",
+                dish_26: "Tortellini frescos en caldo",
+                pasta: "Pasta",
+                dish_27: "Tagliolini con trufa blanca",
+                dish_28: "Pappardelle con ragú de jabalí",
+                dish_29: "Raviolis con alcachofas al estilo Nino",
+                dish_30: "Canelones al estilo Nino",
+                dish_31: "Espaguetis con almejas",
+                section_main_courses: "Segundos & Guarniciones",
+                grilled_meats: "Carnes a la Parrilla & Express",
+                dish_32: "Bistec florentino por kg",
+                dish_33: "Filete de ternera",
+                dish_34: "Tagliata de ternera sobre rúcula",
+                dish_35: "Tartar de ternera",
+                dish_36: "Berenjenas a la parmigiana",
+                fried_fish: "Fritos & Pescado",
+                dish_37: "Frito mixto italiano",
+                dish_38: "Alcachofas fritas",
+                dish_39: "Dorada / Lubina",
+                vegetables: "Verduras",
+                dish_40: "Dos alcachofas a la romana",
+                dish_41: "Judías al fiasco con aceite",
+                dish_42: "Achicoria de campo / Brócoli",
+                section_desserts: "Postres & Frutas",
+                desserts: "Postres",
+                dish_43: "Tiramisú / Profiteroles / Crema caramel",
+                dish_44: "Montebianco / Castagnaccio",
+                dish_45: "Helados mixtos",
+                fruits: "Frutas",
+                dish_46: "Frutos del bosque",
+                dish_47: "Piña / Fruta de temporada",
+                section_history: "La Historia",
+                history_subtitle_1: "Desde Toscana con Pasión",
+                history_text_1: "Gioacchino Guarnacci, conocido como Nino, nació en Castelfranco di Sopra en 1899, en la provincia de Arezzo. Uno de los pueblos más bellos de Toscana e Italia. Inmediatamente después de la Primera Guerra Mundial, era imposible encontrar trabajo en Castelfranco, por lo que Nino viajó probando muchos oficios del norte al sur de Italia. Llegó a Roma con su hermano Mario, donde comenzaron a trabajar como empleados en la restauración. Intuyeron que sería su actividad, y así es como juntos, con talento y determinación, emprendieron la actividad de la restauración. Abrieron en 1933 en Via Rasella. El éxito llegó rápidamente y en 1939 también abrieron en Via Borgognona. El restaurante tuvo desde el principio una clientela numerosa y variada, pero también fiel y a menudo amiga.",
+                history_subtitle_2: "Las Personalidades de Nino y Mario",
+                history_text_2: "Nino y Mario tenían personalidades diferentes: el primero emprendedor e histriónico y el segundo reservado y ponderado. Tales diferencias no comportaron vínculos, sino oportunidades y ventajas organizativas: eran complementarios y se dividían la responsabilidad con recíproca estima y profunda entente, en el intento de realizar una pasión común. Nino extrovertido, intuitivo, rico de gran comunicativa y simpatía hizo un arte de este oficio. Quien lo ha conocido cuenta de su sociabilidad y de su generosidad. Dotes que lo llevaron a establecer con los huéspedes una relación de recíproca estima y simpatía. Sin dejarse intimidar por la fama de los personajes del espectáculo o por los títulos nobiliarios de la sociedad romana que frecuentaban el local, acogía y trataba a todos como si fuera un anfitrión y no un hostelero. Por naturaleza inclinado a la belleza amuebló el restaurante sin hacer economía solo con cosas bellas y de prestigio y que aún caracterizan el restaurante por su clásica elegancia. Entre las varias cosas, hizo realizar una vitrofania reportante una escena de caza para dividir la entrada de la cocina de la que se podía – y se puede aún – ver la cocina y los cocineros. Probablemente la primera cocina a vista en la historia de la restauración fue una intuición de Nino. Difícil enumerar cuántos personajes notables del espectáculo, del arte y del mundo público comieron en Nino, citamos solo algunos: Dino De Laurentiis con Silvana Mangano, Carlo Ponti y Sophia Loren, Rizzoli, Dino Risi, Michelangelo Antonioni, Roberto Rossellini, Alberto Sordi, Anna Magnani, Audrey Hepburn, Vittorio Gassman, Marcello Mastroianni, Lucio Dalla. Y aún los pintores Guttuso, Manzù, Vaccari, Tamburi, Vaccari.",
+                history_subtitle_3: "El Presente",
+                history_text_3: "Los años pasan y la historia de Nino continúa gracias al amor y al compromiso de la familia. Después de la desaparición de la escena de Maria, Egidio y Anna, que durante muchos años custodiaron y hicieron crecer el restaurante en el surco de los fundadores, el testigo ha pasado a las generaciones sucesivas, que con entusiasmo y dedicación llevan adelante el espíritu de familia que desde siempre anima a Nino. Abogados, ingenieros, sommeliers: cada uno ha puesto a disposición su saber y su sensibilidad, enriqueciendo la gestión con nuevas ideas, pero siempre en pleno respeto de la tradición. En los últimos meses se han añadido también los jóvenes de la cuarta generación, llenos de pasión y ganas de hacer. Su energía se refleja en la acogida de los clientes y en la cura de nuestra presencia en Instagram, donde tratamos de contar lo que sucede en Nino también entre bastidores. Todo esto, sin embargo, sin olvidar nunca el carácter auténtico y la personalidad inconfundible de Nino, que han asumido un valor icónico en la escena romana. Un rol fundamental continúa desempeñándolo nuestro personal, desde siempre parte integrante de la familia. Con profesionalidad, atención y gentileza, acompaña a los clientes haciendo cada visita un momento placentero y auténtico: es también gracias a ellos si la atmósfera de Nino conserva ese sentido de acogida y de calor.",
+                history_subtitle_4: "La Clientela",
+                history_text_4: "Es variada e internacional: parejas, familias, profesionales, turistas, políticos, actores, periodistas. Nuestros clientes fieles están esparcidos por todo el mundo y cada vez que están en Roma vienen a visitarnos como parada imprescindible del viaje y nos cuentan desde cuántos años nos conocen y cuáles son nuestros platos que más aman, reencontrando siempre la misma acogida y la misma bondad de los platos. Aprovechamos la ocasión para agradecerles sinceramente por su fidelidad y su afecto.",
+                section_wines: "Carta de Vinos",
+                red_wines: "Vinos Tintos",
+                wine_1: "Chianti Classico",
+                wine_2: "Brunello di Montalcino",
+                wine_3: "Morellino di Scansano",
+                wine_4: "Nobile di Montepulciano",
+                white_wines: "Vinos Blancos",
+                wine_5: "Vernaccia di San Gimignano",
+                wine_6: "Galestro",
+                wine_7: "Vermentino",
+                rose_wines: "Vinos Rosados",
+                wine_8: "Rosato di Toscana",
+                wine_9: "Cerasuolo di Vittoria",
+                sparkling_wines: "Vinos Espumosos",
+                wine_10: "Franciacorta",
+                wine_11: "Prosecco"
+            },
+            fr: {
+                nav_home: "Accueil",
+                nav_storia: "Histoire",
+                nav_menu: "Menu",
+                nav_prenota: "Réserver",
+                hero_title: "Le Goût de la Tradition à Rome",
+                hero_desc: "Depuis 1946, la cuisine toscane authentique au cœur de la ville.",
+                hero_btn: "Voir le Menu",
+                menu_title: "Le Menu",
+                section_daily: "Plats du Jour",
+                monday: "Lundi",
+                dish_1: "Poitrine de veau rôtie avec purée",
+                dish_2: "Sanglier mijoté avec polenta",
+                dish_3: "Côtelettes d'agneau grillées avec pommes de terre",
+                dish_4: "Filet de thon grillé ou avec oignons rouges aigres-doux",
+                dish_5: "Sole selon vos envies",
+                dish_6: "Calmars frais",
+                dish_7: "Zampone avec lentilles",
+                tuesday_saturday: "Mardi / Samedi",
+                dish_8: "Osso buco de veau avec purée",
+                dish_9: "Médaillons de veau avec purée",
+                dish_10: "Pintade en casserole avec purée",
+                dish_11: "Agneau rôti avec pommes de terre",
+                dish_12: "Cochon de lait rôti avec pommes de terre (Samedi)",
+                wednesday: "Mercredi",
+                dish_48: "Poulet chasseur avec pommes de terre",
+                dish_49: "Lapin en ragoût avec polenta",
+                dish_50: "Porc en sauce avec haricots",
+                thursday: "Jeudi",
+                dish_51: "Pâtes et haricots",
+                dish_52: "Soupe de pois chiches",
+                dish_53: "Risotto aux champignons",
+                friday: "Vendredi",
+                dish_13: "Morue à la livournaise",
+                dish_14: "Morue frite avec courgettes",
+                dish_15: "Calmars frais",
+                section_appetizers: "Entrées & Crues",
+                raw_fish: "Poissons crus",
+                dish_16: "Tartare de thon aux pommes vertes",
+                dish_17: "Carpaccio de poulpe, fenouil et poivre rose",
+                dish_18: "Crudos de crevettes rouges et cèpes",
+                classic_appetizers: "Entrées Classiques",
+                dish_19: "Crostini toscans",
+                dish_20: "Assortiment de charcuteries toscanes",
+                dish_21: "Jambon de Parme / Mozzarella de bufflonne",
+                dish_22: "Bresaola roquette et parmesan",
+                dish_23: "Caviar avec haricots",
+                section_first_courses: "Premiers Plats",
+                soups_stews: "Soupes & Ragoûts",
+                dish_24: "Ribollita toscane",
+                dish_25: "Soupe de haricots style 'Francovich'",
+                dish_26: "Tortellini frais en bouillon",
+                pasta: "Pâtes",
+                dish_27: "Tagliolini à la truffe blanche",
+                dish_28: "Pappardelle au ragù de sanglier",
+                dish_29: "Raviolis aux artichauts style Nino",
+                dish_30: "Cannelloni style Nino",
+                dish_31: "Spaghetti aux palourdes",
+                section_main_courses: "Plats Principaux & Accompagnements",
+                grilled_meats: "Viandes Grillées & Express",
+                dish_32: "Bistecca florentine au kg",
+                dish_33: "Filet de bœuf",
+                dish_34: "Tagliata de bœuf sur roquette",
+                dish_35: "Steak tartare",
+                dish_36: "Aubergines parmigiana",
+                fried_fish: "Fritures & Poisson",
+                dish_37: "Fritto misto à l'italienne",
+                dish_38: "Artichauts frits",
+                dish_39: "Dorade / Bar",
+                vegetables: "Légumes",
+                dish_40: "Deux artichauts à la romaine",
+                dish_41: "Haricots en fiasco à l'huile",
+                dish_42: "Chicorée champêtre / Brocoli",
+                section_desserts: "Desserts & Fruits",
+                desserts: "Desserts",
+                dish_43: "Tiramisu / Profiteroles / Crème caramel",
+                dish_44: "Montebianco / Castagnaccio",
+                dish_45: "Glaces mixtes",
+                fruits: "Fruits",
+                dish_46: "Baies",
+                dish_47: "Ananas / Fruits de saison",
+                section_history: "L'Histoire",
+                history_subtitle_1: "De Toscane avec Passion",
+                history_text_1: "Gioacchino Guarnacci, connu sous le nom de Nino, est né à Castelfranco di Sopra en 1899, dans la province d'Arezzo. L'un des plus beaux villages de Toscane et d'Italie. Juste après la Première Guerre mondiale, il était impossible de trouver du travail à Castelfranco, c'est pourquoi Nino a voyagé en essayant de nombreux métiers du nord au sud de l'Italie. Il est arrivé à Rome avec son frère Mario, où ils ont commencé à travailler comme employés dans la restauration. Ils ont compris que ce serait leur activité, et c'est ainsi qu'ensemble, avec talent et détermination, ils ont démarré le métier de la restauration. Ils ont ouvert en 1933 via Rasella. Le succès est arrivé rapidement et en 1939 ils ont également ouvert via Borgognona. Le restaurant a immédiatement eu une clientèle nombreuse et variée, mais aussi fidèle et souvent amie.",
+                history_subtitle_2: "Les Personnalités de Nino et Mario",
+                history_text_2: "Nino et Mario avaient des personnalités différentes : le premier était entreprenant et histrionique et le second réservé et réfléchi. Ces différences n'ont pas créé de contraintes, mais des opportunités et des avantages organisationnels : ils étaient complémentaires et partageaient la responsabilité avec un profond respect et une compréhension mutuelle, dans le but de réaliser une passion commune. Nino, extraverti, intuitif, riche d'une grande communicabilité et sympathie, a fait un art de ce métier. Ceux qui l'ont connu parlent de sa sociabilité et de sa générosité. Des qualités qui lui ont permis d'établir une relation de respect réciproque et de sympathie avec les clients. Sans être intimidé par la renommée des personnages du spectacle ou par les titres de noblesse de la société romaine qui fréquentaient le lieu, il accueillait et traitait tout le monde comme s'il était un hôte et non un aubergiste. Naturellement attiré par la beauté, il a décoré le restaurant sans faire d'économies avec des choses belles et précieuses qui caractérisent encore le restaurant pour son élégance classique. Entre autres, il a fait réaliser une vitrophanie représentant une scène de chasse pour séparer l'entrée de la cuisine d'où l'on pouvait - et l'on peut encore - voir la cuisine et les cuisiniers. Probablement la première cuisine ouverte dans l'histoire de la restauration a été une intuition de Nino. Difficile d'énumérer combien de personnalités célèbres du spectacle, de l'art et du monde public ont mangé chez Nino, nous n'en citons que quelques-unes : Dino De Laurentiis avec Silvana Mangano, Carlo Ponti et Sophia Loren, Rizzoli, Dino Risi, Michelangelo Antonioni, Roberto Rossellini, Alberto Sordi, Anna Magnani, Audrey Hepburn, Vittorio Gassman, Marcello Mastroianni, Lucio Dalla. Et aussi les peintres Guttuso, Manzù, Vaccari, Tamburi, Vaccari.",
+                history_subtitle_3: "Le Présent",
+                history_text_3: "Les années passent et l'histoire de Nino continue grâce à l'amour et à l'engagement de la famille. Après le départ de la scène de Maria, Egidio et Anna, qui pendant de nombreuses années ont gardé et fait croître le restaurant dans le sillage des fondateurs, le témoin est passé aux générations suivantes, qui avec enthousiasme et dévouement portent l'esprit de famille qui anime Nino depuis toujours. Avocats, ingénieurs, sommeliers : chacun a mis à disposition son savoir et sa sensibilité, enrichissant la gestion avec de nouvelles idées, mais toujours dans le plein respect de la tradition. Ces derniers mois, les jeunes de la quatrième génération se sont également joints à nous, pleins de passion et d'envie de faire. Leur énergie se reflète dans l'accueil des clients et dans le soin de notre présence sur Instagram, où nous essayons de raconter ce qui se passe chez Nino aussi en coulisses. Tout cela, cependant, sans jamais oublier le caractère authentique et la personnalité inimitable de Nino, qui ont pris une valeur iconique dans la scène romaine. Un rôle fondamental continue d'être joué par notre personnel, qui a toujours fait partie intégrante de la famille. Avec professionnalisme, attention et gentillesse, ils accompagnent les clients en faisant de chaque visite un moment agréable et authentique : c'est aussi grâce à eux que l'atmosphère de Nino conserve ce sentiment d'accueil et de chaleur.",
+                history_subtitle_4: "La Clientèle",
+                history_text_4: "Elle est variée et internationale : couples, familles, professionnels, touristes, politiciens, acteurs, journalistes. Nos clients fidèles sont dispersés dans le monde entier et chaque fois qu'ils sont à Rome, ils viennent nous rendre visite comme une étape incontournable du voyage et nous racontent depuis combien d'années ils nous connaissent et quels sont nos plats qu'ils aiment le plus, retrouvant toujours le même accueil et la même bonté des plats. Nous profitons de l'occasion pour les remercier sincèrement de leur fidélité et de leur affection.",
+                section_wines: "Carte des Vins",
+                red_wines: "Vins Rouges",
+                wine_1: "Chianti Classico",
+                wine_2: "Brunello di Montalcino",
+                wine_3: "Morellino di Scansano",
+                wine_4: "Nobile di Montepulciano",
+                white_wines: "Vins Blancs",
+                wine_5: "Vernaccia di San Gimignano",
+                wine_6: "Galestro",
+                wine_7: "Vermentino",
+                rose_wines: "Vins Rosés",
+                wine_8: "Rosato di Toscana",
+                wine_9: "Cerasuolo di Vittoria",
+                sparkling_wines: "Vins Effervescents",
+                wine_10: "Franciacorta",
+                wine_11: "Prosecco"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            const elements = document.querySelectorAll('[data-key]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        };
+
+        // Menù dropdown e chiusura click outside + accessibilità
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navMenu');
+        const dropbtn = document.getElementById('dropdownToggle');
+        const dropdownContent = document.getElementById('dropdownMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+
+        function toggleMenu() {
+            const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', String(!expanded));
+            navLinks.classList.toggle('show');
+            mobileOverlay.classList.toggle('show');
+        }
+
+        function closeMenu() {
+            navToggle.setAttribute('aria-expanded', 'false');
+            navLinks.classList.remove('show');
+            dropdownContent.classList.remove('show');
+            dropbtn.setAttribute('aria-expanded', 'false');
+            mobileOverlay.classList.remove('show');
+        }
+
+        function toggleDropdown(e) {
+            e.stopPropagation();
+            const expanded = dropbtn.getAttribute('aria-expanded') === 'true';
+            dropbtn.setAttribute('aria-expanded', String(!expanded));
+            dropdownContent.classList.toggle('show');
+        }
+
+        navToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            toggleMenu();
+        });
+
+        dropbtn.addEventListener('click', toggleDropdown);
+
+        mobileOverlay.addEventListener('click', closeMenu);
+
+        document.addEventListener('click', closeMenu);
+
+        // blocca chiusura subito dopo click interno nav
+        navLinks.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    </script>
+</body>
+</html>
