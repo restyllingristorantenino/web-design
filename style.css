@@ -1,4 +1,5 @@
 /* Semplice stile per i pulsanti lingua */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
 .lang-switcher {
     display: flex;
     gap: 10px;
@@ -17,7 +18,7 @@
 /* Layout Strutturale */
 :root { --pale: #E4EAE4; --soft: #C3D3C2; --leaf: #B7C9B6; --deep: #33403a; --dark: #33403a; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Georgia', serif; line-height: 1.6; color: var(--deep); background: var(--pale); }
+body { font-family: 'Lora', serif; line-height: 1.6; color: var(--deep); background: var(--pale); }
 
 .navbar { display: flex; align-items: center; padding: 20px 5% 20px 3%; background: var(--soft); border-bottom: 1px solid var(--leaf); position: sticky; top: 0; z-index: 1000; }
 .logo { margin-right: 20px; }
@@ -66,7 +67,8 @@ body { font-family: 'Georgia', serif; line-height: 1.6; color: var(--deep); back
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-                url('_DSC6169.jpg');
+               url('img/_DSC6169.jpg');
+;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -114,10 +116,111 @@ body { font-family: 'Georgia', serif; line-height: 1.6; color: var(--deep); back
 
 /* Stili specifici per la sezione storia */
 #storia .menu-item {
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0;
+    background: var(--soft);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid var(--leaf);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#storia h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 1.4rem;
+    color: var(--dark);
+}
+
+#storia p {
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* FORM PRENOTA – versione elegante */
+.reservation {
+    background: var(--soft);
+    padding: 60px 5%;
+    border-top: 1px solid var(--leaf);
+    border-bottom: 1px solid var(--leaf);
+}
+
+.reservation-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid var(--leaf);
+}
+
+.reservation-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--dark);
+}
+
+.reservation-container p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+#reservationForm {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#reservationForm label {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+#reservationForm input,
+#reservationForm textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--leaf);
+    background: var(--pale);
+    font-size: 1rem;
+}
+
+#reservationForm button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Contenitori prenotazione e contatti */
+.reservation-container,
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Griglia informativa per orari/indirizzo/contatti */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.info-box {
+    background: var(--soft);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--leaf);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.info-box h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.info-box p {
+    margin-bottom: 6px;
+    line-height: 1.7;
 }
 
 .menu-item h3 { color: var(--dark); margin-bottom: 15px; border-bottom: 1px solid var(--deep); font-size: 1.4em; }
@@ -128,6 +231,39 @@ body { font-family: 'Georgia', serif; line-height: 1.6; color: var(--deep); back
 .price { font-weight: bold; color: var(--dark); min-width: 50px; text-align: right; }
 
 footer { text-align: center; padding: 40px; background: var(--soft); margin-top: 50px; }
+
+/* Sticky actions – orizzontali all'inizio */
+.sticky-actions {
+    position: fixed;
+    bottom: 20px;
+    right: 90px; /* spazio per la freccia */
+    display: flex;
+    gap: 10px;
+    z-index: 3000;
+    transition: all 0.3s ease;
+}
+
+.sticky-actions a {
+    background: var(--deep);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid var(--leaf);
+    transition: background 0.2s ease;
+}
+
+.sticky-actions a:hover {
+    background: var(--leaf);
+}
+
+/* Quando scrolli diventano verticali */
+.sticky-actions.scrolled {
+    flex-direction: column;
+    right: 30px; /* vicino alla freccia */
+    bottom: 90px; /* sopra la freccia */
+}
 
 /* Scroll to Top Button */
 #scrollToTopBtn {
