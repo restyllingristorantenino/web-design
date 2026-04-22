@@ -258,12 +258,15 @@ footer { text-align: center; padding: 40px; background: var(--soft); margin-top:
     background: var(--leaf);
 }
 
-/* Quando scrolli diventano verticali */
-.sticky-actions.scrolled {
+/* VERSIONE VERTICALE AUTOMATICA SENZA JS */
+body:has(#menu:in-view) .sticky-actions,
+body:has(#prenota:in-view) .sticky-actions,
+body:has(#contatti:in-view) .sticky-actions {
     flex-direction: column;
     right: 30px; /* vicino alla freccia */
     bottom: 90px; /* sopra la freccia */
 }
+
 
 /* Scroll to Top Button */
 #scrollToTopBtn {
