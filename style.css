@@ -67,7 +67,7 @@ body { font-family: 'Lora', serif; line-height: 1.6; color: var(--deep); backgro
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-     a('_DSC6169.jpg');
+    url('_DSC6169.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -76,6 +76,7 @@ body { font-family: 'Lora', serif; line-height: 1.6; color: var(--deep); backgro
     text-align: center;
     color: white;
 }
+
 
 .hero-content {
     max-width: 600px;
